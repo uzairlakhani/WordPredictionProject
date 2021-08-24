@@ -1,0 +1,36 @@
+
+body {
+    background-color: orange;
+    font-family: sans-serif;
+}
+
+form {
+    text-align: center;
+    background-color: rgb(255, 223, 162);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20%;
+    padding-top: 2px;
+    border-radius: 5%;
+}
+
+textarea {
+    
+    background-color: rgb(255, 241, 214);
+    border-style: none;
+}
+
+hr {
+    width: 15%;
+}
+
+.button {
+    background-color: rgb(255, 241, 214);
+    border-style: groove;
+    cursor:pointer;
+    border-color: rgb(209, 209, 209);
+}
+
+.button:hover {
+    background-color: rgb(253, 216, 146);
+}

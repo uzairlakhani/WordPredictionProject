@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ <title>Word Prediction App</title>
+ <link rel="stylesheet" href="{% static 'WordPredictionApp/prediction.css' %}?{% now "U" %}">
+</head>
+<body>
+    <h4>Project Under Development</h4>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <h1>Word Prediction App</h1>
+    <hr>
+    <section>
+        <p>Type in text here</p>
+        <textarea name = "predict" id="text" rows="4" cols="30" placeholder="Enter Text here...">{{ initial }}</textarea>
+        <p>{{ predict }}</p>
+     
+    </section>
+    <hr>
+    <section>
+        <input class = "button" type="submit" value="Predict Next Word">
+    </section>
+    
+</form>
+ 
+</body>
+</html>
